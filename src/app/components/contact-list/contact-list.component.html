@@ -22,19 +22,19 @@
 
   <div class="col-12 d-flex align-items-center flex-column">
     <p class="h3"><b>Studenti</b></p>
-    <div class="col-12 d-flex align-items-center flex-column" *ngFor="let contact of contacts">
-      <div *ngIf="contact.type=='student'" class="col-12 d-flex align-items-center flex-column">
-        <app-contact-item [contact]="contact"></app-contact-item>
+    <div class="col-2 d-flex align-items-center flex-column " *ngFor="let contact of contacts">
+      <div *ngIf="contact.type=='student'" class="col-12 d-flex align-items-center flex-column ">
+        <app-contact-item class="col-12 d-flex justify-content-center" [contact]="contact"></app-contact-item>
       </div>
     </div>
   </div>
 
 
-  <div class="col-12 d-flex align-items-center flex-column">
+  <div class="col-12 mt-5 d-flex align-items-center flex-column">
     <p class="h3"><b>Professori</b></p>
-    <div class="col-12 d-flex align-items-center flex-column" *ngFor="let contact of contacts">
-      <div *ngIf="contact.type=='teacher'">
-        <app-contact-item [contact]="contact"></app-contact-item>
+    <div class="col-2 d-flex align-items-center flex-column" *ngFor="let contact of contacts">
+      <div *ngIf="contact.type=='teacher'" class="col-12 d-flex align-items-center flex-column ">
+        <app-contact-item class="col-12 d-flex justify-content-center" [contact]="contact"></app-contact-item>
       </div>
     </div>
   </div>
